@@ -1,4 +1,5 @@
-Understanding Corporate Narratives: Sentiment Analysis of News Articles Using AWS AI
+<h1>Understanding Corporate Narratives: Sentiment Analysis of News Articles Using AWS AI</h1>
+
 
 source: https://www.diepresse.com/19039294/unicredit-commerzbank-wird-das-noch-was
 
@@ -22,7 +23,7 @@ The project relied on the following tools:
 Step-by-Step Approach
 
 1. Data Collection
-The first step involved collecting articles from the German news website Die Presse, focusing on topics related to the Unicredit-Commerzbank merger. Using Python’s requests and BeautifulSoup, I extracted the page title, content from <p> and <h1> tags, and combined the text for further analysis.
+The first step involved collecting articles from the German news website Die Presse, focusing on topics related to the Unicredit-Commerzbank merger. Using Python’s requests and BeautifulSoup, I extracted the page title, content from "<p>" and "<h1>" tags, and combined the text for further analysis.
 
 response = requests.get(url, headers=headers)
 webpage = BeautifulSoup(response.content, "html.parser")
@@ -70,10 +71,14 @@ Results and Visualizations
 
 Sentiment Distribution
 
+![Sentiment Bar Chart](Sentiment%20bar%20chart.png)
+
 A bar chart was created to visualize the sentiment distribution across the articles. This showed that negative sentiment dominated discussions, particularly when highlighting challenges in the merger process.
  
 Key Phrase Analysis
 A word cloud or bar chart showcasing frequently occurring key phrases was used to visualize recurring themes. This highlighted the focus areas of the discussion.
+
+![Sentiment Word Cloud](Sentiment%20Wordcloud.png "Key Phrases Word Cloud")
 
 Challenges Faced
 Context Preservation in Translation
