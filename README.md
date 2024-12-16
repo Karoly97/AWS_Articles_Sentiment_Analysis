@@ -109,4 +109,7 @@ This project used AWS AI services to analyze sentiment in German news articles a
 Key findings revealed predominantly neutral sentiment with significant negative undertones, reflecting stakeholder criticism and regulatory hurdles. However, AWS Comprehend struggled to capture the nuanced blend of skepticism and cautious optimism present in the articles, as well as the underlying tension in strategic visions between the two banks. While the tools effectively highlighted major themes and general sentiment trends, the subtleties of complex narratives require further refinement.
 This project demonstrated how AWS simplifies large-scale text analysis, offering actionable insights into corporate narratives while highlighting areas for improvement in detecting layered sentiments.
 
-Estimated cost:  The artical is around 7000 character AWS Translate($0.10) + AWS Comprehend($0.15) x 5 ~ $1.25
+![AWS Cost Estimate](AWS%20cost%20estimate.png "AWS Cost Estimate for Sentiment Analysis Project")
+Estimated cost:  AWS Translate: Cost per Character x Characters x number of time to run (7500 X 0,1125 X 5 = 0,5625)
+AWS Comprehend: Cost per Character x Characters x number of time to run (7500 X 0,15 X 5 = 0,75)
+Total estimetion: 1,3125 USD
